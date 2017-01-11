@@ -1,0 +1,15 @@
+declare type LOAD_DATA_INITIATION_TYPE = '{{ uppercase name }}/LOAD_DATA_INITIATION';
+declare type LOAD_DATA_SUCCESS_TYPE = '{{ uppercase name }}/LOAD_DATA_SUCCESS';
+declare type LOAD_DATA_FAILURE_TYPE = '{{ uppercase name }}/LOAD_DATA_FAILURE';
+
+export {
+  LOAD_DATA_INITIATION_TYPE,
+  LOAD_DATA_SUCCESS_TYPE,
+  LOAD_DATA_FAILURE_TYPE,
+}
+
+declare interface {{ properCase name }}Props = {
+
+}
+
+export default {{ properCase name }}Props;
