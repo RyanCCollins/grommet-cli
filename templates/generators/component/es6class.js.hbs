@@ -3,6 +3,10 @@ import React, { PropTypes } from 'react';
 {{else}}
 import React from 'react';
 {{/if}}
+import Box from 'grommet/components/Box';
+{{#if imports}}
+{{{ createImports imports }}}
+{{/if}}
 
 {{#if wantFlowTypes}}
 type {{ properCase name }}Props = {
