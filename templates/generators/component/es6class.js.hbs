@@ -1,0 +1,32 @@
+{{#if wantPropTypes}}
+import React, { PropTypes } from 'react';
+{{else}}
+import React from 'react';
+{{/if}}
+
+{{#if wantFlowTypes}}
+type {{ properCase name }}Props = {
+
+}
+{{/if}}
+
+class {{ properCase name }} extends Component { // eslint-disable-line react/prefer-stateless-function
+  {{#if wantFlowTypes}}
+  props: {{ properCase name }}Props;
+  {{/if}}
+  render() {
+    return (
+      <Box>
+
+      </Box>
+    );
+  }
+}
+
+{{#if wantPropTypes}}
+{{ properCase name }}.propTypes = {
+
+};
+{{/if}}
+
+export default {{ properCase name }};
