@@ -8,7 +8,7 @@ export const LOAD_DATA_INITIATION: LOAD_DATA_INITIATION_TYPE = '{{ uppercase nam
 export const LOAD_DATA_SUCCESS: LOAD_DATA_SUCCESS_TYPE = '{{ uppercase name }}/LOAD_DATA_SUCCESS';
 export const LOAD_DATA_FAILURE: LOAD_DATA_FAILURE_TYPE = '{{ uppercase name }}/LOAD_DATA_FAILURE';
 {{else}}
-export const {{ uppercase name }}_LOAD_DATA_INITIATION = '{{ uppercase name }}_LOAD_DATA_INITIATION';
-export const {{ uppercase name }}_LOAD_DATA_SUCCESS = '{{ uppercase name }}_LOAD_DATA_SUCCESS';
-export const {{ uppercase name }}_LOAD_DATA_FAILURE = '{{ uppercase name }}_LOAD_DATA_FAILURE';
+export const LOAD_DATA_INITIATION = '{{ uppercase name }}/LOAD_DATA_INITIATION';
+export const LOAD_DATA_SUCCESS = '{{ uppercase name }}/LOAD_DATA_SUCCESS';
+export const LOAD_DATA_FAILURE = '{{ uppercase name }}/LOAD_DATA_FAILURE';
 {{/if}}

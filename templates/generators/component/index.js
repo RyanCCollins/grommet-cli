@@ -70,7 +70,7 @@ module.exports = {
     const componentPath = path.resolve(process.cwd(), `${data.path}/{{properCase name}}/`);
     const actions = [{
       type: 'add',
-      path: `${componentPath}/index.js`,
+      path: `${componentPath}/index.jsx`,
       templateFile: data.type === 'ES6 Class' ?
         './component/es6class.js.hbs' : './component/stateless.js.hbs',
       abortOnFail: true

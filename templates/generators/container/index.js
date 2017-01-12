@@ -70,12 +70,12 @@ module.exports = {
     const containerPath = path.resolve(process.cwd(), `${data.path}/{{properCase name}}/`);
     const actions = [{
       type: 'add',
-      path: `${containerPath}/index.js`,
+      path: `${containerPath}/index.jsx`,
       templateFile: './container/index.js.hbs',
       abortOnFail: true
     }, {
       type: 'add',
-      path: `${containerPath}/tests/index.test.js`,
+      path: `${containerPath}/tests/index.test.jsx`,
       templateFile: './container/test.js.hbs',
       abortOnFail: true
     }];
@@ -115,6 +115,14 @@ module.exports = {
         templateFile: './container/reducer.js.hbs',
         abortOnFail: true
       });
+      if (data.wantFlowTypes) {
+        actions.push({
+          type: 'add',
+          path: `${containerPath}/flowTypes.js`,
+          templateFile: './container/flowTypes.js.hbs',
+          abortOnFail: true
+        });
+      }
       if (data.wantJestTests) {
         actions.push({
           type: 'add',

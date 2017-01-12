@@ -14,12 +14,14 @@ import checkCommand from './commands/check';
 import newCommand from './commands/new';
 import packCommand from './commands/pack';
 import versionCommand from './commands/version';
+import generateCommand from './commands/generate';
 
 const cli = vorpal();
 cli.use(checkCommand);
 cli.use(newCommand);
 cli.use(packCommand);
 cli.use(versionCommand);
+cli.use(generateCommand);
 
 if (process.argv.length === 2) {
   // this means that only 'grommet' has been typed

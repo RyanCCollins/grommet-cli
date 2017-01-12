@@ -17,8 +17,7 @@
     "url": "https://github.com/grommet/grommet-cli.git"
   },
   "bin": {
-    "grommet": "./bin/grommet.js",
-    "plop": "/.bin/plop"
+    "grommet": "./bin/grommet.js"
   },
   "preferGlobal": true,
   "dependencies": {
@@ -50,7 +49,6 @@
     "babel-preset-es2015": "^6.9.0"
   },
   "scripts": {
-    "build": "node_modules/.bin/babel src --out-dir bin --copy-files --loose-mode",
-    "generator": "plop --plopfile ./templates/generators/cli.js"
+    "build": "node_modules/.bin/babel src --out-dir bin --copy-files --loose-mode"
   }
 }
